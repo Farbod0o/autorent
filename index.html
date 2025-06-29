@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <style>
+      @keyframes slide-down {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-slide-down {
+        animation: slide-down 0.3s ease-out forwards;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-NbYFCc4Z.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CHWecLdU.css">
+  </head>
+  <body class="bg-[#f3f3f3]">
+    <!-- head -->
+    <header>
+      <!-- Navbar -->
+      <div
+        class="relative w-full h-[300px] md:h-[680px] bg-[url('/images/main.png')] bg-cover bg-bottom bg-[rgba(0,0,0,0.72)] bg-blend-overlay"
+      >
+        <div
+          class="relative w-full h-[300px] md:h-[680px] bg-[url('/images/car.png')] bg-cover bg-bottom bg-[rgba(0,0,0,0.00)] bg-blend-overlay"
+        >
+          <div
+            class="mx-[10%] w-[80%] h-[56px] md:h-[96px] bg-white rounded-b-[32px] flex items-center justify-between px-4 relative z-50"
+          >
+            <!-- Logo -->
+            <div class="flex-shrink-0 w-12 md:w-[10%] mx-[2%]">
+              <img src="./images/logo.png" alt="لوگو" class="w-full h-auto" />
+            </div>
+
+            <!-- Hamburger Button -->
+            <button
+              id="menu-btn"
+              class="md:hidden text-gray-700 focus:outline-none z-50"
+              aria-label="بازکردن منو"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+
+            <!-- Desktop Navbar -->
+            <nav
+              class="hidden md:flex w-[80%] justify-between items-center px-8"
+            >
+              <a class="font-[MyFont] text-[#353535]" href="./index.html">رزرو خودرو</a>
+              <a class="font-[MyFont] text-[#353535]" href="./plp.html">خدمات ما</a>
+              <a class="font-[MyFont] text-[#353535]" href="#">بلاگ</a>
+              <a class="font-[MyFont] text-[#353535]" href="#">درباره ما</a>
+              <a class="font-[MyFont] text-[#353535]" href="./pdp.html">جست‌و‌جو</a>
+            </nav>
+
+            <!-- Login/Register -->
+            <div
+              class="hidden md:flex items-center justify-end w-[10%] mx-[2%]"
+            >
+              <a class="font-[MyFont] text-[#353535]" href="#">
+                ورود | ثبت‌نام
+              </a>
+            </div>
+          </div>
+          <p
+            class="text-[22px] md:text-[44px] mt-[6%] text-[#FDB713] font-[MyFont] mx-[10%] w-[300px] md:mt-[12%]"
+          >
+            اُتـــو رِنت؛ سریع، آسان و به صرفه
+          </p>
+          <p
+            class="text-[10px] md:text-[20px] text-[#F9F9F9] font-[MyFont] mx-[10%]"
+          >
+            سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
+          </p>
+          <div class="flex items-center gap-4 mx-[10%] mt-[20px]">
+            <a
+              class="border text-[10px] md:text-[16px] border-[#FDB713] rounded-[8px] bg-[#FDB713] font-[MyFont] px-3 py-2"
+              href=""
+              >رزرو آسان خودرو</a
+            >
+            <a
+              class="border text-[10px] md:text-[16px] border-amber-50 py-2 px-3 font-[MyFont] text-white rounded-[8px]"
+              href=""
+              >تماس با ما</a
+            >
+          </div>
+          <!-- Mobile Menu -->
+          <div
+            id="overlay"
+            class="fixed inset-0 bg-[#1a3284d8] hidden z-40"
+          ></div>
+
+          <div
+            id="mobile-menu"
+            class="md:hidden fixed top-[80px] right-4 left-4 bg-white rounded-[16px] shadow-xl p-6 flex-col gap-4 hidden animate-slide-down z-50"
+          >
+            <a class="font-[MyFont] text-[#353535] block py-2" href="#"
+              >رزرو خودرو</a
+            >
+            <a class="font-[MyFont] text-[#353535] block py-2" href="#"
+              >خدمات ما</a
+            >
+            <a class="font-[MyFont] text-[#353535] block py-2" href="#">بلاگ</a>
+            <a class="font-[MyFont] text-[#353535] block py-2" href="#"
+              >درباره ما</a
+            >
+            <a class="font-[MyFont] text-[#353535] block py-2" href="#"
+              >جست‌و‌جو</a
+            >
+            <a class="font-[MyFont] text-[#353535] block py-2" href="#"
+              >ورود | ثبت‌نام</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of head -->
+
+    <!-- Rent Car -->
+    <div
+      class="relative w-[90%] md:w-[80%] mx-auto left-0 right-0 mt-[-40px] md:mt-[-62px] bg-white rounded-2xl shadow-md"
+    >
+      <!-- top section: buttons -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-between p-4 gap-2 md:gap-4"
+      >
+        <div class="flex flex-wrap justify-center md:justify-start gap-2">
+          <a
+            class="font-[MyFont] bg-[#194BF0] text-white text-[10px] md:text-[12px] border border-[#D7D7D7] px-3 py-1 rounded-2xl"
+            >اجاره خودرو با راننده</a
+          >
+          <a
+            class="font-[MyFont] text-[10px] md:text-[12px] border border-[#D7D7D7] px-3 py-1 rounded-2xl"
+            >اجاره خودرو بی راننده</a
+          >
+          <a
+            class="font-[MyFont] text-[10px] md:text-[12px] border border-[#D7D7D7] px-3 py-1 rounded-2xl"
+            >اجاره ماشین عروس</a
+          >
+        </div>
+        <a
+          class="font-[MyFont] text-[12px] text-[#194BF0] text-center mt-2 md:mt-0"
+          href="#"
+        >
+          اطلاعات بیشتر در مورد رزرو خودرو
+        </a>
+      </div>
+
+      <!-- icons row -->
+      <div
+        class="flex md:hidden flex-wrap md:flex-nowrap justify-between items-start gap-3 w-full px-4 pb-4 text-[10px] md:text-[14px]"
+      >
+        <div
+          class="flex flex-col items-start gap-1 w-full md:w-1/5 border p-2 rounded-lg border-[#D7D7D7]"
+        >
+          <div class="flex items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="arrow" />
+            <p class="font-[MyFont]">محل تحویل خودرو</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">
+            تهران - فرودگاه امام خمینی
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-start gap-1 w-full md:w-1/5 border p-2 rounded-lg border-[#D7D7D7]"
+        >
+          <div class="flex items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="arrow" />
+            <p class="font-[MyFont]">تاریخ تحویل</p>
+          </div>
+          <div class="flex items-center justify-between w-full">
+            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
+            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-start gap-1 w-full md:w-1/5 border p-2 rounded-lg border-[#D7D7D7]"
+        >
+          <div class="flex items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="arrow" />
+            <p class="font-[MyFont]">ساعت تحویل</p>
+          </div>
+          <div class="flex items-center justify-between w-full">
+            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">08:00</p>
+            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-start gap-1 w-full md:w-1/5 border p-2 rounded-lg border-[#D7D7D7]"
+        >
+          <div class="flex items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="arrow" />
+            <p class="font-[MyFont]">تاریخ بازگشت</p>
+          </div>
+          <div class="flex items-center justify-between w-full">
+            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫15</p>
+            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-start gap-1 w-full md:w-1/5 border p-2 rounded-lg border-[#D7D7D7]"
+        >
+          <div class="flex items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="arrow" />
+            <p class="font-[MyFont]">ساعت بازگشت</p>
+          </div>
+          <div class="flex items-center justify-between w-full">
+            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">22:00</p>
+            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between w-[100%] px-4">
+        <div class="">
+          <div class="hidden md:flex items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="" />
+            <p class="font-[MyFont] text-[10px] md:text-[14px]">
+              محل تحویل خودرو
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden md:flex w-[70%] justify-start">
+          <div class="flex w-1/4 items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="" />
+            <p class="font-[MyFont] text-[10px] md:text-[14px]">تاریخ تحویل</p>
+          </div>
+          <div class="flex w-1/4 items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="" />
+            <p class="font-[MyFont] text-[10px] md:text-[14px]">ساعت تحویل</p>
+          </div>
+          <div class="flex w-1/4 items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="" />
+            <p class="font-[MyFont] text-[10px] md:text-[14px]">تاریخ بازگشت</p>
+          </div>
+          <div class="flex w-1/4 items-center gap-1">
+            <img src="./assets/arrow-left-DQpsydiD.svg" alt="" />
+            <p class="font-[MyFont] text-[10px] md:text-[14px]">ساعت بازگشت</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- input row -->
+      <div class="hidden md:block px-4 pb-4">
+        <div
+          class="flex flex-col md:flex-row border border-[#D7D7D7] rounded-[16px] overflow-hidden"
+        >
+          <div
+            class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-full md:w-[30%]"
+          >
+            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">
+              تهران - فرودگاه امام خمینی
+            </p>
+            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.6494%207.3457L16.6885%207.37109C16.7099%207.39261%2016.7236%207.42326%2016.7236%207.45898C16.7236%207.4767%2016.7198%207.4931%2016.7139%207.50781L16.6885%207.54688L11.2549%2012.9805C10.9102%2013.3251%2010.4552%2013.501%2010%2013.501C9.60173%2013.5009%209.20399%2013.366%208.87988%2013.1016L8.74512%2012.9805L3.3125%207.54688C3.291%207.52537%203.27738%207.49478%203.27734%207.45898C3.27734%207.44091%203.28101%207.42413%203.28711%207.40918L3.3125%207.37109C3.33403%207.34957%203.36454%207.33594%203.40039%207.33594C3.41816%207.33595%203.43446%207.33977%203.44922%207.3457L3.48828%207.37109L8.92188%2012.8037C9.47984%2013.3617%2010.364%2013.3972%2010.9629%2012.9092L11.0791%2012.8037L16.5117%207.37109C16.5332%207.34957%2016.5647%207.33594%2016.6006%207.33594C16.6184%207.33598%2016.6347%207.33975%2016.6494%207.3457Z'%20fill='%23868686'%20stroke='%23868686'/%3e%3c/svg%3e" alt="dropdown" />
+          </div>
+
+          <div class="flex flex-wrap w-full md:w-[70%]">
+            <div
+              class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
+            >
+              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
+              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+            </div>
+            <div
+              class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
+            >
+              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
+              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+            </div>
+            <div
+              class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
+            >
+              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
+              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+            </div>
+            <div
+              class="flex items-center justify-between px-3 py-2 border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
+            >
+              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
+              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of rent car -->
+
+    <!-- logos -->
+    <div class="mt-10 overflow-hidden w-full">
+      <img src="./assets/logos-CJuzp_Sg.png" alt="" class="w-full object-cover" />
+    </div>
+    <!-- end of logos -->
+
+    <!-- banner -->
+    <div class="flex items-center justify-center mt-10">
+      <div
+        class="relative w-[90%] md:w-[80%] h-[180px] md:h-[290px] overflow-hidden rounded-[16px]"
+      >
+        <img
+          class="w-full h-full object-cover brightness-25"
+          src="./assets/car-parked-njS8k8Jc.jpg"
+          alt=""
+        />
+        <div class="absolute inset-0 flex">
+          <div class="flex-col">
+            <h2
+              class="text-[#FDB713] text-lg md:text-2xl font-bold font-[MyFont] text-center mt-6"
+            >
+              چــــــرا اُتو رِنت؟
+            </h2>
+            <p
+              class="w-[85%] md:w-[70%] mx-auto text-white text-[10px] md:text-[18px] font-[MyFont] text-center mt-5 line-clamp-4"
+            >
+              اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا
+              در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی
+              ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در
+              اختیار ندارید یا خودروی شما مطمئن نیست، می‌توانید از سوییچ، خودروی
+              مناسب خود را کرایه کرده و با آسودگی به سفر بروید.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of banner -->
+
+    <!-- support -->
+    <div class="w-full relative">
+      <div class="w-full -mt-10 md:-mt-20 z-10">
+        <div class="flex justify-center">
+          <div
+            class="flex w-[90%] md:w-[80%] justify-center gap-4 md:gap-6 flex-wrap"
+          >
+            <div
+              class="flex flex-col justify-center w-1/4 bg-white rounded-[16px] border border-[#D7D7D7]"
+            >
+              <img
+                class="w-[64px] md:w-[72px] mx-auto md:mt-4 md:border border-[#08237D] rounded-[12px] p-[8px] md:p-[12px]"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h3
+                class="font-[MyFont] text-center md:mt-2 text-[12px] md:text-2xl"
+              >
+                تحویل در محل
+              </h3>
+              <p
+                class="hidden md:block text-sm p-3 text-[#757575] font-[MyFont] text-center mb-2"
+              >
+                تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center w-1/4 bg-white rounded-[16px] border border-[#D7D7D7]"
+            >
+              <img
+                class="w-[64px] md:w-[72px] mx-auto md:mt-4 md:border border-[#08237D] rounded-[12px] p-[8px] md:p-[12px]"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h3
+                class="font-[MyFont] text-center md:mt-2 text-[12px] md:text-2xl"
+              >
+                پشتیبانی 24 ساعته
+              </h3>
+              <p
+                class="hidden md:block text-sm p-3 text-[#757575] font-[MyFont] text-center mb-2"
+              >
+                کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
+              </p>
+            </div>
+            <div
+              class="flex flex-col justify-center w-1/4 bg-white rounded-[16px] border border-[#D7D7D7]"
+            >
+              <img
+                class="w-[64px] md:w-[72px] mx-auto md:mt-4 md:border border-[#08237D] rounded-[12px] p-[8px] md:p-[12px]"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <h3
+                class="font-[MyFont] text-center md:mt-2 text-[12px] md:text-2xl"
+              >
+                قیمت مناسب
+              </h3>
+              <p
+                class="hidden md:block text-sm p-3 text-[#757575] font-[MyFont] text-center mb-2"
+              >
+                هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of support -->
+
+    <!-- types of cars -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-5 gap-4 w-[80%] md:w-[80%] mx-auto mt-20"
+    >
+      <div
+        class="relative group h-[144px] bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+      >
+        <div
+          class="p-4 z-10 relative flex flex-col items-center justify-center h-full"
+        >
+          <h3 class="font-[MyFont] text-center mt-2">کوپه</h3>
+
+          <img
+            src="./assets/cope-D9oO3uad.png"
+            alt="کوپه"
+            class="h-full object-cover"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-[10px] left-0 w-[90%] mx-[5%] h-[40%] bg-[#FDB713] text-white flex items-center justify-center text-sm text-center translate-y-full group-hover:translate-y-[40%] transition-all duration-500 ease-in-out rounded-t-[16px]"
+        ></div>
+      </div>
+
+      <div
+        class="relative group h-[144px] bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+      >
+        <div
+          class="p-4 z-10 relative flex flex-col items-center justify-center h-full"
+        >
+          <h3 class="font-[MyFont] text-center mt-2">کوپه</h3>
+
+          <img
+            src="./assets/sedan-xoEkpbKc.png"
+            alt="ُسدان"
+            class="h-full object-cover"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-[10px] left-0 w-[90%] mx-[5%] h-[40%] bg-[#FDB713] text-white flex items-center justify-center text-sm text-center translate-y-full group-hover:translate-y-[40%] transition-all duration-500 ease-in-out rounded-t-[16px]"
+        ></div>
+      </div>
+
+      <div
+        class="relative group h-[144px] bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+      >
+        <div
+          class="p-4 z-10 relative flex flex-col items-center justify-center h-full"
+        >
+          <h3 class="font-[MyFont] text-center mt-2">کروک</h3>
+
+          <img
+            src="./assets/croc-CZCHHJh7.png"
+            alt="کروک"
+            class="h-full object-cover"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-[10px] left-0 w-[90%] mx-[5%] h-[40%] bg-[#FDB713] text-white flex items-center justify-center text-sm text-center translate-y-full group-hover:translate-y-[40%] transition-all duration-500 ease-in-out rounded-t-[16px]"
+        ></div>
+      </div>
+
+      <div
+        class="relative group h-[144px] bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+      >
+        <div
+          class="p-4 z-10 relative flex flex-col items-center justify-center h-full"
+        >
+          <h3 class="font-[MyFont] text-center mt-2">شاسی بلند</h3>
+
+          <img
+            src="./assets/suv-DegevmPx.png"
+            alt=""
+            class="h-full object-cover"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-[10px] left-0 w-[90%] mx-[5%] h-[40%] bg-[#FDB713] text-white flex items-center justify-center text-sm text-center translate-y-full group-hover:translate-y-[40%] transition-all duration-500 ease-in-out rounded-t-[16px]"
+        ></div>
+      </div>
+
+      <div
+        class="relative group h-[144px] bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+      >
+        <div
+          class="p-4 z-10 relative flex flex-col items-center justify-center h-full"
+        >
+          <h3 class="font-[MyFont] text-center mt-2">اسپورت</h3>
+
+          <img
+            src="./assets/sport-DCpraQ-Z.png"
+            alt=""
+            class="h-full object-cover"
+          />
+        </div>
+
+        <div
+          class="absolute bottom-[10px] left-0 w-[90%] mx-[5%] h-[40%] bg-[#FDB713] text-white flex items-center justify-center text-sm text-center translate-y-full group-hover:translate-y-[40%] transition-all duration-500 ease-in-out rounded-t-[16px]"
+        ></div>
+      </div>
+    </div>
+    <!-- types of cars -->
+
+    <!-- text -->
+    <div class="flex flex-col justify-center mt-20 mb-10">
+      <p class="font-[MyFont] text-lg md:text-2xl text-center text-[#5E5E5E]">
+        مشاهده موجودی خودروها
+      </p>
+      <p
+        class="font-[MyFont] text-2xl md:text-[42px] text-center font-bold text-[#000000] mt-[10px]"
+      >
+        رزرو خودرو در <span class="text-[#D79C10]">اُتـــورِنت</span>
+      </p>
+    </div>
+
+    <div class="relative w-full md:w-[80%] mx-auto py-6">
+      <div
+        class="grid grid-cols-2 md:flex items-center justify-center gap-4 md:gap-6 px-4 py-3 rounded-2xl transition-all duration-300"
+      >
+        <a
+          href="#"
+          class="text-center border border-[#194BF0] bg-[#194BF0] text-white rounded-xl px-4 py-2 text-sm md:text-base font-[MyFont] hover:bg-[#0f35aa] transition whitespace-nowrap"
+        >
+          پرطرفدار
+        </a>
+
+        <a
+          href="#"
+          class="text-center border border-[#194BF0] text-[#194BF0] rounded-xl px-4 py-2 text-sm md:text-base font-[MyFont] hover:bg-[#eaf0ff] transition whitespace-nowrap"
+        >
+          لوکس
+        </a>
+
+        <a
+          href="#"
+          class="text-center border border-[#194BF0] text-[#194BF0] rounded-xl px-4 py-2 text-sm md:text-base font-[MyFont] hover:bg-[#eaf0ff] transition whitespace-nowrap"
+        >
+          اقتصادی
+        </a>
+
+        <a
+          href="#"
+          class="text-center flex justify-center items-center border border-dashed border-[#194BF0] text-[#194BF0] rounded-xl px-4 py-2 text-sm font-[MyFont] hover:bg-[#eaf0ff] transition whitespace-nowrap md:hidden"
+        >
+          مشاهده همه
+          <img
+            src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.5004%2017.2253C12.3421%2017.2253%2012.1837%2017.1669%2012.0587%2017.0419L6.62539%2011.6086C5.74206%2010.7253%205.74206%209.27526%206.62539%208.39193L12.0587%202.95859C12.3004%202.71693%2012.7004%202.71693%2012.9421%202.95859C13.1837%203.20026%2013.1837%203.60026%2012.9421%203.84193L7.50872%209.27526C7.10872%209.67526%207.10872%2010.3253%207.50872%2010.7253L12.9421%2016.1586C13.1837%2016.4003%2013.1837%2016.8003%2012.9421%2017.0419C12.8171%2017.1586%2012.6587%2017.2253%2012.5004%2017.2253Z'%20fill='%23194BF0'/%3e%3c/svg%3e"
+            alt="فلش"
+            class="w-4 h-4"
+          />
+        </a>
+      </div>
+
+      <div
+        class="hidden md:flex items-center md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2"
+      >
+        <a
+          href="#"
+          class="flex items-center gap-2 text-sm font-[MyFont] text-[#194BF0] px-4"
+        >
+          مشاهده همه
+          <img
+            src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.5004%2017.2253C12.3421%2017.2253%2012.1837%2017.1669%2012.0587%2017.0419L6.62539%2011.6086C5.74206%2010.7253%205.74206%209.27526%206.62539%208.39193L12.0587%202.95859C12.3004%202.71693%2012.7004%202.71693%2012.9421%202.95859C13.1837%203.20026%2013.1837%203.60026%2012.9421%203.84193L7.50872%209.27526C7.10872%209.67526%207.10872%2010.3253%207.50872%2010.7253L12.9421%2016.1586C13.1837%2016.4003%2013.1837%2016.8003%2012.9421%2017.0419C12.8171%2017.1586%2012.6587%2017.2253%2012.5004%2017.2253Z'%20fill='%23194BF0'/%3e%3c/svg%3e"
+            alt="فلش"
+            class="w-4 h-4"
+          />
+        </a>
+      </div>
+    </div>
+    <!-- end of text -->
+
+    <!-- cards -->
+    <div
+      class="grid w-[90%] md:w-[80%] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto"
+    >
+      <!-- card1 -->
+      <div
+        class="bg-white border border-[#D7D7D7] rounded-[16px] flex flex-col justify-center p-[15px]"
+      >
+        <img
+          src="./assets/car-e350-7KEBR-K_.jpg"
+          alt=""
+          class="p-[15px] w-[100%] border border-[#F3F3F3] rounded-[12px]"
+        />
+        <h3 class="font-[MyFont] my-2">اجاره بنز E350 سدان</h3>
+        <p class="font-[MyFont] text-[12px] text-[#868686]">مدل : 2016</p>
+
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+
+        <div class="border-t border-[#D7D7D7] mt-2 flex justify-between">
+          <p class="font-[MyFont] mt-2 text-[12px]">مبلغ ضمانت:</p>
+          <p class="font-[MyFont] mt-2 text-[12px] font-bold">
+            80 میلیون تومان
+          </p>
+        </div>
+        <div class="flex justify-center mt-2">
+          <a
+            href=""
+            class="w-full bg-[#194BF0] text-white font-[MyFont] text-center rounded-[8px] py-3"
+            >درخواست رزرو</a
+          >
+        </div>
+      </div>
+
+      <!-- card2 -->
+      <div
+        class="bg-white border border-[#D7D7D7] rounded-[16px] flex flex-col justify-center p-[15px]"
+      >
+        <img
+          src="./assets/car-landc-CtO1_7mJ.jpg"
+          alt=""
+          class="p-[15px] w-[100%] border border-[#F3F3F3] rounded-[12px]"
+        />
+        <h3 class="font-[MyFont] my-2">اجاره تویوتا لندکروز در تهران 2013</h3>
+        <p class="font-[MyFont] text-[12px] text-[#868686]">مدل : 2016</p>
+
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+
+        <div class="border-t border-[#D7D7D7] mt-2 flex justify-between">
+          <p class="font-[MyFont] mt-2 text-[12px]">مبلغ ضمانت:</p>
+          <p class="font-[MyFont] mt-2 text-[12px] font-bold">
+            80 میلیون تومان
+          </p>
+        </div>
+        <div class="flex justify-center mt-2">
+          <a
+            href=""
+            class="w-full bg-[#194BF0] text-white font-[MyFont] text-center rounded-[8px] py-3"
+            >درخواست رزرو</a
+          >
+        </div>
+      </div>
+
+      <!-- card3 -->
+      <div
+        class="bg-white border border-[#D7D7D7] rounded-[16px] flex flex-col justify-center p-[15px]"
+      >
+        <img
+          src="./assets/car-genesis-Dk3sXUPX.jpg"
+          alt=""
+          class="p-[15px] w-[100%] border border-[#F3F3F3] rounded-[12px]"
+        />
+        <h3 class="font-[MyFont] my-2">اجاره جنسیس کوپه</h3>
+        <p class="font-[MyFont] text-[12px] text-[#868686]">مدل : 2016</p>
+
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+
+        <div class="border-t border-[#D7D7D7] mt-2 flex justify-between">
+          <p class="font-[MyFont] mt-2 text-[12px]">مبلغ ضمانت:</p>
+          <p class="font-[MyFont] mt-2 text-[12px] font-bold">
+            80 میلیون تومان
+          </p>
+        </div>
+        <div class="flex justify-center mt-2">
+          <a
+            href=""
+            class="w-full bg-[#194BF0] text-white font-[MyFont] text-center rounded-[8px] py-3"
+            >درخواست رزرو</a
+          >
+        </div>
+      </div>
+
+      <!-- card4 -->
+      <div
+        class="bg-white border border-[#D7D7D7] rounded-[16px] flex flex-col justify-center p-[15px]"
+      >
+        <img
+          src="./assets/bmw5-_dFPwjzL.jpg"
+          alt=""
+          class="p-[15px] w-[100%] border border-[#F3F3F3] rounded-[12px]"
+        />
+        <h3 class="font-[MyFont] my-2">اجاره بی ام و 528</h3>
+        <p class="font-[MyFont] text-[12px] text-[#868686]">مدل : 2016</p>
+
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+
+        <div class="border-t border-[#D7D7D7] mt-2 flex justify-between">
+          <p class="font-[MyFont] mt-2 text-[12px]">مبلغ ضمانت:</p>
+          <p class="font-[MyFont] mt-2 text-[12px] font-bold">
+            80 میلیون تومان
+          </p>
+        </div>
+        <div class="flex justify-center mt-2">
+          <a
+            href=""
+            class="w-full bg-[#194BF0] text-white font-[MyFont] text-center rounded-[8px] py-3"
+            >درخواست رزرو</a
+          >
+        </div>
+      </div>
+
+      <!-- card5 -->
+      <div
+        class="bg-white border border-[#D7D7D7] rounded-[16px] flex flex-col justify-center p-[15px]"
+      >
+        <img
+          src="./assets/car-tucson-B8nT_wJx.jpg"
+          alt=""
+          class="p-[15px] w-[100%] border border-[#F3F3F3] rounded-[12px]"
+        />
+        <h3 class="font-[MyFont] my-2">اجاره هیوندای توسان 2014</h3>
+        <p class="font-[MyFont] text-[12px] text-[#868686]">مدل : 2016</p>
+
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+
+        <div class="border-t border-[#D7D7D7] mt-2 flex justify-between">
+          <p class="font-[MyFont] mt-2 text-[12px]">مبلغ ضمانت:</p>
+          <p class="font-[MyFont] mt-2 text-[12px] font-bold">
+            80 میلیون تومان
+          </p>
+        </div>
+        <div class="flex justify-center mt-2">
+          <a
+            href=""
+            class="w-full bg-[#194BF0] text-white font-[MyFont] text-center rounded-[8px] py-3"
+            >درخواست رزرو</a
+          >
+        </div>
+      </div>
+
+      <!-- card6 -->
+      <div
+        class="bg-white border border-[#D7D7D7] rounded-[16px] flex flex-col justify-center p-[15px]"
+      >
+        <img
+          src="./assets/car-mas-Cs4oNvb9.jpg"
+          alt=""
+          class="p-[15px] w-[100%] border border-[#F3F3F3] rounded-[12px]"
+        />
+        <h3 class="font-[MyFont] my-2">اجاره بنز sl کروک</h3>
+        <p class="font-[MyFont] text-[12px] text-[#868686]">مدل : 2016</p>
+
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+        <div
+          class="bg-[#F3F3F3] flex items-center justify-between px-3 py-2 mt-1 rounded-[8px]"
+        >
+          <div class="flex items-center gap-x-2">
+            <p class="font-[MyFont] text-[12px] text-[#868686]">
+              از 1 تا 30 روز:
+            </p>
+            <p class="font-[MyFont] text-[16px] text-[#194BF0]">8,500,000</p>
+          </div>
+          <p class="font-[MyFont] text-[12px] text-[#494949]">روزانه</p>
+        </div>
+
+        <div class="border-t border-[#D7D7D7] mt-2 flex justify-between">
+          <p class="font-[MyFont] mt-2 text-[12px]">مبلغ ضمانت:</p>
+          <p class="font-[MyFont] mt-2 text-[12px] font-bold">
+            80 میلیون تومان
+          </p>
+        </div>
+        <div class="flex justify-center mt-2">
+          <a
+            href=""
+            class="w-full bg-[#194BF0] text-white font-[MyFont] text-center rounded-[8px] py-3"
+            >درخواست رزرو</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- end cards -->
+
+    <!-- how rent a car -->
+    <div class="w-[90%] md:w-[80%] mx-auto my-16">
+      <!-- first -->
+      <div class="flex flex-col justify-center mb-4">
+        <p class="font-[MyFont] text-[24px] text-[#5E5E5E] text-center">
+          چگونه در وبسایت
+        </p>
+        <p class="font-[MyFont] text-[32px] text-[#000000] text-center">
+          <span class="text-[#D79C10]">اُتـــورِنت،</span> خودرو رزرو کنیم؟
+        </p>
+      </div>
+      <!-- sec -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-0.5">
+        <!-- right -->
+        <div
+          class="flex flex-col md:items-center md:justify-between md:pb-[40%] md:pt-[20%]"
+        >
+          <div class="flex items-center gap-2">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+              class="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"
+            />
+            <div class="">
+              <p class="text-lg font-[MyFont]">
+                <span class="text-[#d79c10]">خودروی</span> خود را انتخاب کنید.
+              </p>
+              <p class="text-sm font-[MyFont] text-[#5E5E5E]">
+                خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+              class="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"
+            />
+            <div class="mb-[15px]">
+              <p class="text-lg font-[MyFont]">
+                <span class="text-[#d79c10]">هزینه</span> اجاره را پرداخت کنید.
+              </p>
+              <p class="text-sm font-[MyFont] text-[#5E5E5E]">
+                می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب هزینه
+                اجاره را پرداخت کنید.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- center -->
+        <div class="p-[10%] flex justify-center">
+          <img
+            src="./assets/car-center2-DAv2ASCt.png"
+            alt=""
+            class="w-[50%] md:w-full"
+          />
+        </div>
+
+        <!-- left -->
+        <div
+          class="flex w-full flex-col md:items-center md:justify-between md:pb-[40%] md:pt-[20%]"
+        >
+          <div
+            class="flex w-full md:flex-row-reverse items-center gap-2 md:justify-between"
+          >
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+              class="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"
+            />
+            <div class="mb-[15px]">
+              <p class="text-lg font-[MyFont] w-full">
+                <span class="text-[#d79c10]">تاریخ</span> تحویل را تعیین کنید.
+              </p>
+              <p class="text-sm font-[MyFont] text-[#5E5E5E]">
+                تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex w-full md:flex-row-reverse items-center gap-2 md:justify-between"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAAAAAXNSR0IArs4c6QAADmBJREFUeAHtnT1v1EoXx/cj8BH4KLR0FPSkJ8WtoIRQB+4tobpI0EMNBbeCch9Aa28iUG6UKAJFhCgQJYqI/PAzPovj6/HreHdm54wU+WXt8fg/vz1nzrxsRqOB03g8vjyZTFYmk8lfURQ9i6JoHMfxVhzHif45pcEWdUMdTSaTu1EUXYvj+PLAeAyT/fv3768AnILmFGBdv/AYi7+p02FosZTreDy+9NOi3ZlOp1/zlm1jYyPZ2dlJPn/+nBweHiYnJyfJ2dlZosktBaiT4+Pj5OjoKNnf30+2t7cT6i5flxgUvJlTlrEMPArOS/BCmvxWgDrEeHz48GEGI0ZmOp3+uXAQoyj6I2/x+NYodH4DV1V66pY6zlnF1CJacqLNs4H8OI5fSUEUvKpqW77PcNe7u7sXQJybNcxbPcyyWrzlA6zpG9GmF9ccRdFX2Ghuxjpcmfn9lHzaBefn503LqtctqQJYw729vbw1vNMBrfpbCMVxuQQYBwcHSyqnvlZXBWBCmmSwUk9UiyuyzuMUPrpRNKkCZQrARs4lj1sgZr5ULB8Za/9dmex6Lq8AjAiEvS3hT5N6B7Oq8OUl1v06BYBQOrGJG8zmreITIhrx6ep26yTXz4sKwIxA2Do6pk9HOpg14ChKq8dNFZDAhC6aVv2EMomA8FqTKtBHgU+fPkl0/KrC4f7+KBts1nZfH9X13pkCP378mAUlta44G2JL5+rRy61JFbChAKNlxBO4Yiav/DZ3hT0Z6WCcT5MqYFMBmcTAZNcCdr8O84GH9vfZlF7zQoFaKyhtP0jVpAoMoUClFZTIV2e3DCG95okCeSt4wQ0z319GPFQqVWBIBaRzOo7j32tMoih6DIBMsdKkCgypAEs1YI1FazMrqO53SMk177wC4oZhLgUw6/tLNjc389fpviowmAI5N3x5lC1AThebDPZEzVgVyCkg60noeRnRMYhPxjdrUgXmoYCMD6ftwCiKngMgC5I1qQLzUIBh3iwQeT6aTqf8VouubpuH8vqMVIHT01MZGx7TBvwXAHX4TemYlwKwBnNpJJztzOvZ+hxVIFVAuBvJjuqiCsxTAeFOAZyn6vqsmQIK4EwK3VmEAgrgIlTXZ84UUABnUujOIhRQABehuj5zpoACOJPCzg5T2V6+fJk8evQoefDgQbK6upqsrKykf1evXk2uX7+e7nP+9u3b6TXPnj1L3r17l3z//t1OITzKRQHsWVlAA3DABlxA1ucPKJ8+fZp8/PixZ8n8uF0B7FhPWCysnA3oTMBiOYGbQftlTQpgy5oFPKyUCZohzgMiVnEZQVQAGwJI5c8bvCLMAmLDIntxmQLYoJqwPkUYFnkMiMtiDRXACgCp5Js3b7aCjzbhrVu30vbhixcv0t9DIZ98hMsxv7X49u3bhAh4bW0tuXHjRqvn8AXgi+F7UgANNfj69evGAQbQEZAAVB40Q9bG00AJkG1gvHfvXq9nGgszpw8UwBKhm7pcwHvy5MkgAADz/fv3G1lFn12yAlgAsAl8Q4JXKE7a1mvSDPAVQgUwV+NN4KO91sfN5h7Xapf2JOBXBT8+QqgAZhjQ9qqqXCqfaxaZCF7q2odAuIgvSFddFMAkSSPSKvioVAIEV9L6+nrll4Uo3JcUPIB1VsVVt0bwU/Wl8aWLJngAadOZKtJV+MS61UFIJO16ChpAGva+widgVbljH9qDwQJY53pdavMJbGXbb9++VQYmrrviYAGs6uTFtfmU+DKZumg473JUHCSAVFiV6/UJPilrVTeSy1YwSACrrB9w+profin7YrlsBYMDkDaTyV0Bps+JqLcMQM65agWDA7Aq8vXZ+skXp8oKyjUubYMD0DSr2XfrJ1BVWUEX+wWDArAq+HCxcgSqtltTE4M5i66loAA0uV86bIdKLGJiySbPkPYZa4KxuG/evBnksQ8fPpw9S57Jdsj37PoiQQFoin6HsAxYW5O7L0Jhu+1Z5YZd6xMMCkDTxE7b7pdRFJMbzMMn+1xreyG66fksNXApBQMg3S9S4cWtTauANTNVfvG5+WPusWkJTdGwa90xwQBIWyxf4bKPVbSZ6iaMynPLtjbn8ZnagbRHXUrBAIjrKat0VpXZSqZnlD3XdM5Wc8AUcNn+wvXVLhgATWOlNgMQU5ADbLJ6DndvKgvX2bJQJovvWiQcDIC0fcqsjs02kSnIKVtLYiqPLUBoT5a9L21Nl1LwAPLrU7ZSWYVzrizIqQqKbJTHBCDlcSkpgArgQnkMHsAy99i1RkwRcJmbN7UDbQUJagG71uJA95naXGVwdC1CVRACcLhi/kxlwT2Sh41kCkK0DWhD3Q55mLolbEWdFKlqCMzUPiyetzVSYeoSsmVhO1RB6S3BuGBThdjs/EVh0whEEbSyY1sRMOUwuXjb71tKVYuTwQBoahPZdkk8hzzLAKs6xz3cayuZmgM2+z1tlDUYABHLBAb/WsFm6jIZwfYy0DZ9kjbfvW1eQQFoco82+wKlArBmpqg4bwkpk03Lx/PJL/+M/L6toT55z75bBdDi8FdZZdD2xB3mLRJgcm4oGEwBFyC6loIB0NQmolJca5j3hYQJFnmrJ/suvmcQAFbBR+XY7IzuC0/f+6vc7xBNjb7lXXoA6+BzrV+sb4Wa5gHyRbPd1uxbVu5fagCbwFc2UcCGsIvIA8BMgY/NeY82321pAQwNPqCoGuKzNcJiEz7yWkoAQ4Svqu1nc4RFAaxRIET4kKRqCaiLwYdU41JZwFDhq3K9Lls/IFwaAEOFjyE86ecr29pebyyWy9Z2KQAMFb6qqBcY6ZJxPXkPoMJ3tdQC4np96GLyGkCFrxw+Vzudy6yxtwCGCh9T7U3TyqQN6NPQopcAhgpf1TCbwOfbL/x7B2CI8GH18tO5BLbi1jf4cMleARgafHShVHUw5wH0ET6vAAwJPixeU/CA0Kc2XzEQ8cIC1rV9cE+L6nKQdb4Aw4wThr3adv6SBz/Xy4KhugAjb/W4dqhZ1UVQhjp2HsCq6eVUxiLhq+oIBg6gZN0xQ2X8ASfWin1gA1j66/JQNd0fYi3JUJBV5es8gKb5bS7D1xSiLtcBts8utwij0wCafl6iK3yMm0o0ieXpOkeuyvJ1garJPYAnvzFYrESfj50G0BR4dBlmAhoqsVjZbacqzRu+ZQVPvjROAyjWqi80vKzppznIuymE84SPNh6udlHBlQAy9NZpAIvgyXGXSqkLZuogbALf2tpausSzzNJK2U1bWStMObu839CgDJW/lwB2EaPqv2QKFCYIm8C3vr5+oVjcQxcJQEkUnN9i3fiMdmlIwF0QyfWREFME3PW3XKjsOutUhLALfEWR9disgNMW0NQGbNvRm3/9NhAqfHnlhtl3GkBTFFy0Um2laQIh7tJkgcVlF91u23Lo9Y5PRgACqez8lvN9UxMI888s7it8fWvg1/1OW0BT5GrrZ3W7Qqjw2YGPXJwGkLZe0fJwTNvQVmoLocJnS/lf+TgNIEFAGYCMhNhMTSFU+Gyq7gGAFNHUbWKz70yjXftgNc3RaQvIS5i6YmzNg1P4mqIyzHXOA2jqirGx6FrhGwaqNrk6DyBDVmXtQM71mRen8LXBZLhrnQewbgwXC8m8wTbDcwrfcEC1zdl5AHkhU4d0mWVcXV1Np8Iz5R0LCZwydAeknNMRjraYDHe9FwBiBeugKYOxyzntahkOtrKcvQCQgjdxm12Ay99jI7ApE1nPmRXwBsChIfR1Ybe5av34xCsAkRR3XLdOOG/VmuwrfIuD1TsARSpcMpMVmAZPZ7VpxKQKQIb0bHVoS7l0204BbwEse02G5wCKBUhEzsU1GkBKMEOErOCVKTj/c0sF4Pzl0yf2VUAB7Kug3t9LAQWwl3x6c18FFMC+Cur9vRRQAHvJpzf3VUAB7Kug3t9LAQWwl3x6c18FZgBGUfQvB2dnZ33z1PtVgUYKwFoG4NZoOp2OOTg9PW10s16kCvRV4Pj4OAUwiqLxKIqi5wB4eHjYN1+9XxVopMDR0VEK4GQyeQ6AfwFgm5nFjZ6iF6kCBgX29/cFwLujyWSyAoC7u7uGy/W0KmBXge3tbXHB10ZxHF8GwM3NTbtP0dxUAYMCGxsbKYCwNyJJJEzjUJMqMKQCEoDEcbyVwpcBmLYD8c2aVIEhFWA+Jx43juO/ZwDGcXxF3fCQsmveogC/x5MBeGUGIDvT6fQrH6gbFql0a1uBUvcrFE4mk7sASISiSRUYQgGJfuM4XhHuZtutra1LagWHkF3zRAEZfouiCE/7K/qd0ZftqBVUWIZSYGdnJ237MfBR5G52rFZwKPnDzpdh3izw2DJaP6EwiqI/uJho5fz8PGzl9O17K4DrzUW+/237CXj5bRzHr4CQPhtNqkAfBfb29mbWL89Y5T5mUgKSg4ODPs/XewNW4MuXLyl8GUvlgYeJRHHFjBHrXMGAKer46icnJ2L5ElgycVZ5XqZqAaHOmO5YEwHeVmj33a2ErO7DKIoeS1CiEAZIU8tXLsD3uI6vRp/LtH2iGXXHLWskoMtxuzLVKp1u34iuhheJJcQaamASEFUNX1UCDvj4GcTasXxFNuM4TseLeQjhtbrkhrWzxJfRV5ybYkXAYR7pKALV5ZiIRrpocMm6mGmJ6ap5NWa3SCczTHSOdtuCSD8hM1ozc5uuJ1FrWFNbS/Qx4OVmtmD1/qkdYmsLWZPrmVaTB5FC6XzCJSKt8CpF8OZq9UxAQj5+X9wyVhGzzDJPhbFQgx4eUocs1ZDolvrN6vrueDy+ZOJi7uczt3zBIlJYCo5l5CX4oXFeSN21eyRSJ3Sx0abHeLBMNw+ds+CVkc4ak6zbZtZO5AX0zz8NWDE5mUxYtHZxDUdZxbt4LnPR15jsmv0MyP9kGagC6Q6QWZ1QN88z4PBm7SYQdADw/0LhU5jrxbBIAAAAAElFTkSuQmCC"
+              alt=""
+              class="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"
+            />
+            <div class="">
+              <p class="text-lg font-[MyFont]">
+                <span class="text-[#d79c10]">خودرو</span> را دریافت کنید.
+              </p>
+              <p class="text-sm font-[MyFont] text-[#5E5E5E]">
+                در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of how rent a car -->
+
+    <!-- questions -->
+    <div class="w-[90%] md:w-[80%] mx-auto">
+      <!-- top -->
+      <div class="flex flex-col items-center justify-center pt-10">
+        <p class="font-[MyFont] text-[24px] text-[#5E5E5E]">
+          پر تکرارترین سؤالاتی که پرسیدید
+        </p>
+        <h3 class="font-[MyFont] text-[32px] font-bold text-[#353535]">
+          سؤالات <span class="text-[#d79c10]">متداول</span>
+        </h3>
+      </div>
+    </div>
+
+    <!-- main -->
+    <style>
+      summary {
+        position: relative;
+        padding-right: 1.5rem;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::before {
+        content: "+";
+        position: absolute;
+        right: 0;
+        top: 0.1rem;
+        font-size: 26px;
+        line-height: 1;
+        transition: all 0.2s ease;
+        color: #555;
+      }
+
+      details[open] > summary::before {
+        content: "-";
+      }
+    </style>
+
+    <div
+      class="flex flex-col-reverse md:flex-row p-6 gap-6 w-[90%] md:w-[80%] mx-auto items-center md:items-start"
+    >
+      <!-- questions list -->
+      <div class="flex-1 space-y-4 w-full">
+        <!-- q 1 -->
+        <div class="bg-white p-4 rounded-[12px] border border-[#E0E0E0]">
+          <details>
+            <summary
+              class="font-[MyFont] cursor-pointer text-[#333] text-right"
+            >
+              در صورت بروز نقص فنی برای خودرو چه اتفاقی می‌افتد؟
+            </summary>
+            <p
+              class="mt-2 text-sm font-[MyFont] text-[#666] leading-relaxed text-right"
+            >
+              در صورت بروز نقص فنی، پشتیبانی ما در اسرع وقت اقدام به تعویض خودرو
+              یا تعمیر آن خواهد کرد.
+            </p>
+          </details>
+        </div>
+
+        <!-- q 2 -->
+        <div class="bg-white p-4 rounded-[12px] border border-[#E0E0E0]">
+          <details>
+            <summary
+              class="font-[MyFont] cursor-pointer text-[#333] text-right"
+            >
+              هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟
+            </summary>
+            <p
+              class="mt-2 text-sm font-[MyFont] text-[#666] leading-relaxed text-right"
+            >
+              در زمان اجاره خودرو، بدون راننده خودروها کارواش شده و با باک بنزین
+              پر تحویل مشتری می‌گردد. در زمان استرداد خودرو در صورتی که خودرو
+              نیاز به نظافت یا سوخت باشد هزینه آن به عهده مشتری می‌باشد.
+            </p>
+          </details>
+        </div>
+
+        <!-- q 3 -->
+        <div class="bg-white p-4 rounded-[12px] border border-[#E0E0E0]">
+          <details>
+            <summary
+              class="font-[MyFont] cursor-pointer text-[#333] text-right"
+            >
+              آیا ماشین‌های اینترنتی دارای بیمه هستند؟
+            </summary>
+          </details>
+        </div>
+
+        <!-- q 4 -->
+        <div class="bg-white p-4 rounded-[12px] border border-[#E0E0E0]">
+          <details>
+            <summary
+              class="font-[MyFont] cursor-pointer text-[#333] text-right"
+            >
+              محدودیت کیلومتر در اجاره خودرو چقدر می‌باشد؟
+            </summary>
+          </details>
+        </div>
+      </div>
+
+      <div class="">
+        <img
+          src="./assets/person2-DRrR14qL.png"
+          alt=""
+          class="rounded-[16px] w-[200px] md:w-[250px]"
+        />
+      </div>
+    </div>
+    <!-- end of questions -->
+
+    <!-- comments -->
+    <div class="w-[90%] md:w-[80%] mx-auto">
+      <!-- top -->
+      <div class="flex flex-col items-center justify-center pt-10">
+        <p class="font-[MyFont] text-[24px] text-[#5E5E5E]">
+          آنچه مشتریان ما درموردمان گفته‌اند.
+        </p>
+        <h3 class="font-[MyFont] text-[32px] font-bold text-[#353535]">
+          نظرات <span class="text-[#d79c10]">مشتریان</span>
+        </h3>
+      </div>
+
+      <!-- main -->
+      <div class="w-full">
+        <div
+          class="w-full mx-auto rounded-2xl border border-[#D7D7D7] bg-white flex flex-col items-center justify-center mt-6 p-[12px]"
+        >
+          <img
+            src="./assets/prof-BIAIabrF.jpg"
+            alt=""
+            class="w-[120px] h-[120px] md:w-[140px] md:h-[140px] rounded-full border-4 border-[#194BF0] object-cover"
+          />
+          <p class="font-[MyFont] text-[16px] mt-2">اولدوز بهاور</p>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAAwCAYAAAA2E06pAAAAAXNSR0IArs4c6QAABo9JREFUeAHtXV1um0wUZQkIXKmPWUKWkCV0CV6Cd5AsITtod5BIlcFv6Q5cKWLwm7uDPFaK/75emys7YGBmmLlAvlPJooFhZu459x4uwzAEAf4BASAABIAAEAACQAAIAAEgAASAABAAAkAACDhFYJvG020av9DvfR5PnVY+gMpg3wBI6NCFz85flmXTPM9f6Ef/7wBVP6fu0sn9Lo0PH3/RfT+9cd8q7HOPqWSNn52/PM/v//0Opd944u+QhjcfxeMsJps0vJN0Fh9twT4fqMrV+dn5y/P8piQel2Iyjvij25c6Edmn8Yucu/hpCfb5wVWq1s/OX3ELcykcl/8ffvxtfk7u6gSE9485G4F98QH8ScmdeTuvr693DVkIi8mws5EmlWcRGXM2AvviA/gzD26pM1qyEBaR4WYjOldpFpIxXs1g37jHtj47f5pZCAvJMLMRnas0i8gYr2aw7ywi4E8qt9BvRzMLYREZXjZiovIsJGPKRmDfWUDAn35gS5U0zEJYSIaVjZhcpdkJx3Q1g31VEQF/UhLR3o5hFsIiMpxshGb+sTCYbseQjcC+qoAwz+CvPcB9lyhmprIwmG77z0bek2i2W8Rv7FTG2yR+G/KUeNhXLyBHrsGfb41orF8pNVutVm8aj3WviotS6k1sSvzhKQzf5+Htdh5PN/PocZvET53EozwlfhG/0S0D1U2Bu/kZ3lGbjQg6PAj7WsSizFf5b/Dn0BurVS2XyzDLslsK+CzLHpVST13Eoyw6RV30jg3VPaMxFmqz2hODPcegSqLZUSzSeG2cYZSdzPbvwjkpW/mbhjcGJjQWhX0dRUOXT/DX6Id1BymAKZhJLPI8X5eDXurvC3Ghl/n044/eLdinUX/CUeug0fp9/uW2Dnjd/bBPSEAqPII/HR8t3n3pTTgaBGpN2ZCODcFuES17yzwqjvfR4V08EYB9HzGV5Br8tYfgarVaNgTy1bENwfJ6T3QkncqmrXYamkvYtCl5TnPv249K9tWmrXYLmkvYtCl5TnPv248KCoKVILVbEAQBXS0kQTdqazFZahnRUAj29ZeJ7MBfg2eeDlnO+bASBFPBUkrpxd82ib8ZBXbLLYjLulw8DoZ9/YkI+GvVkEAp9c00uAXL66+QtksnDy6D301d0UM7BXolYF8fQgL+9LwzCPI8fxAUBt0sxjz+hhVo7hyQiYR9kkIC/tjvdLcDExJzAWFDhxFo7h0Q9o1bQP4v/A1ESOwFZBhE+RMQ2CchJOCP/cx227OQdBcQNryfjMS/A8I+n0IC/ti/um57EhJ3AsIAyAqJnAPCPh9CAv7Yr1xthYXEvYAwEEJzLNbcnvQW9jkRFPDnyXGF5pD45e/4arzneSEu5hLYcgj7uosI+LP1vvbz6KU8gUe/+nNB2rtcLWGzTKDpHJE+F7qBfd1FBPxV48bVHstlEHXngXA5vwsVScz27PNKBvu6iwj4cyUZ1XokZrN6X6Rok0SPppmFaXlamKgKn8we2NddRMCfP19VSj36vp2hhYn8WRAEgc2CxaYi4uIlLVsQYF93EQF/tt7Xfp7EwKr2S3bt3a2WOLyEobEgWA7CSi6NyJbCPgcCUvAN/tir3G3X63XoOwvh+jsvjVhntsSgI4tUH4NzsM+diIC/uiiy3y80qOp3cHUzj8Te7KVHrfZw250J+9yJCPiz88Gms7IsE3uzlx4lN/XF+pjxeMFpkd7nbRL/2hsu9kyTvqw7anki7CuJCPg7cGZc3vbhn6bjIbTIslLqWSn1y2KxZz/xp/2JiON3aCYP5fvi47R57W/URH5nzV0RGthXiAj4qxWPs5jI+6fuJyKKcg/lcQ2aNq9bB4nOlRDpvusMYOmKdTF4ul/ET3/Tr7VLyx/SrzfbJP6hU1f3HpvVoNMn2Af+2E/MvKt7aR70bNquViv6xERt/NExpdSPpjr4WPceX6lhl8R/GMDydp9Ey0060Z7pRp9+aLnF8aOEV+ziXbAP/LEvDNE/lVJ/OMDLW3osm+e5dvzRpx9abnH8xN9mfmXJREp9k4n1IMwuiWY1YvKdCZXawj5zpMGfOWa2Z1wbWC3GPazjr3gX59o3bvzEH82jON2KRL+3afxMYxzlcQ8bgI63OGk8pQHYUzbgpl7TvsA+U8RO5cGfHW6mZ9E8keJW5DcNmNIYR3ncw7ROKl98LGtKA7BFtuOkXpu+4BwgAASAABAAAkAACAABIAAEgAAQAAJAAAiMBYH/AIyhbkkA8sirAAAAAElFTkSuQmCC"
+            alt=""
+            class="w-[100px] h-auto mt-2 mb-4"
+          />
+          <p
+            class="font-[MyFont] text-[14px] text-[#5E5E5E] text-center leading-loose"
+          >
+            اولین بار بود که برای مسافرت ماشین اجاره می‌کردم و به دنبال یک شرکت
+            با سابقه و مطمئن می‌گشتم!<br />
+            بدون هیچ شکی میگم، اتو رنت تو کار خودش بهترینه!<br />
+            پشتیبانی عالی، هزینه بسیار مناسب، آسان بودن روند اجاره و رزرو؛ هرچی
+            بگم کم گفتم!<br />
+            حتماً دفعه بعد هم برای اجاره ماشین به سراغشون میام.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full mt-5">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-[12px]">
+              <div
+                class="border border-[#D7D7D7] bg-[#FDB713] rounded-[16px] flex items-center gap-4 p-[12px]"
+              >
+                <img
+                  src="./assets/prof-BIAIabrF.jpg"
+                  alt=""
+                  class="w-[56px] h-[56px] rounded-full object-cover"
+                />
+                <div class="flex flex-col ml-3">
+                  <p class="font-[MyFont] text-[16px] text-[#212121]">
+                    اولدوز بهاور
+                  </p>
+                  <p class="font-[MyFont] text-[14px] text-[#494949]">
+                    27 دی ماه 1380
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-[12px]">
+              <div
+                class="border border-[#D7D7D7] rounded-[16px] flex items-center gap-4 p-[12px]"
+              >
+                <img
+                  src="./assets/prof3-DYn61cBX.jpg"
+                  alt=""
+                  class="w-[56px] h-[56px] rounded-full object-cover"
+                />
+                <div class="flex flex-col ml-3">
+                  <p class="font-[MyFont] text-[16px] text-[#212121]">
+                    فرزانه حیدری
+                  </p>
+                  <p class="font-[MyFont] text-[14px] text-[#494949]">
+                    27 دی ماه 1380
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-[12px]">
+              <div
+                class="border border-[#D7D7D7] rounded-[16px] flex items-center gap-4 p-[12px]"
+              >
+                <img
+                  src="./assets/prof2-CsFXs5IU.jpg"
+                  alt=""
+                  class="w-[56px] h-[56px] rounded-full object-cover"
+                />
+                <div class="flex flex-col ml-3">
+                  <p class="font-[MyFont] text-[16px] text-[#212121]">
+                    محمدجواد امینی
+                  </p>
+                  <p class="font-[MyFont] text-[14px] text-[#494949]">
+                    27 دی ماه 1380
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide p-[12px]">
+              <div
+                class="border border-[#D7D7D7] rounded-[16px] flex items-center gap-4 p-[12px]"
+              >
+                <img
+                  src="./assets/prof4-BWrSRaJw.jpg"
+                  alt=""
+                  class="w-[56px] h-[56px] rounded-full object-cover"
+                />
+                <div class="flex flex-col ml-3">
+                  <p class="font-[MyFont] text-[16px] text-[#212121]">
+                    فاطمه ابراهیمی‌فر
+                  </p>
+                  <p class="font-[MyFont] text-[14px] text-[#494949]">
+                    27 دی ماه 1380
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination & Navigation optional -->
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end of comments -->
+
+    <!-- maghalat -->
+    <div class="w-[90%] md:w-[80%] mx-auto mt-[30px]">
+      <div class="flex flex-col items-center justify-center pt-10">
+        <p class="font-[MyFont] text-[24px] text-[#5E5E5E]">مقالات ما</p>
+        <h3 class="font-[MyFont] text-[32px] font-bold text-[#353535] mb-2">
+          مجله <span class="text-[#d79c10]">خودرو</span>
+        </h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div
+          class="bg-white rounded-[16px] p-4 border border-[#D7D7D7]"
+          flex
+          justify-center
+        >
+          <img
+            src="./assets/lex-akmzW3Rv.jpg"
+            alt=""
+            class="w-full rounded-[16px]"
+          />
+          <p class="font-[MyFont] text-[16px] mt-2">
+            روش های مختلف برای اجاره خودرو
+          </p>
+          <p class="font-[MyFont] text-[12px] text-[#757575] mt-2">
+             امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+            وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی
+            شده است.
+          </p>
+          <div>
+            <div class="flex mt-2 gap-6 px-1">
+              <div class="flex gap-0.5 items-center">
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 17.5625C4.5525 17.5625 0.9375 13.9475 0.9375 9.5C0.9375 5.0525 4.5525 1.4375 9 1.4375C13.4475 1.4375 17.0625 5.0525 17.0625 9.5C17.0625 13.9475 13.4475 17.5625 9 17.5625ZM9 2.5625C5.175 2.5625 2.0625 5.675 2.0625 9.5C2.0625 13.325 5.175 16.4375 9 16.4375C12.825 16.4375 15.9375 13.325 15.9375 9.5C15.9375 5.675 12.825 2.5625 9 2.5625Z"
+                    fill="#757575"
+                  />
+                  <path
+                    d="M11.783 12.4478C11.6855 12.4478 11.588 12.4253 11.498 12.3653L9.17297 10.9778C8.59547 10.6328 8.16797 9.87531 8.16797 9.20781V6.13281C8.16797 5.82531 8.42297 5.57031 8.73047 5.57031C9.03797 5.57031 9.29297 5.82531 9.29297 6.13281V9.20781C9.29297 9.47781 9.51797 9.87531 9.75047 10.0103L12.0755 11.3978C12.3455 11.5553 12.428 11.9003 12.2705 12.1703C12.158 12.3503 11.9705 12.4478 11.783 12.4478Z"
+                    fill="#757575"
+                  />
+                </svg>
+
+                <p
+                  class="font-[MyFont] text-[12px] text-[#757575] leading-none"
+                >
+                  3دقیقه
+                </p>
+              </div>
+
+              <div class="flex gap-0.5 items-center">
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.00043 12.747C7.20793 12.747 5.75293 11.292 5.75293 9.49945C5.75293 7.70695 7.20793 6.25195 9.00043 6.25195C10.7929 6.25195 12.2479 7.70695 12.2479 9.49945C12.2479 11.292 10.7929 12.747 9.00043 12.747ZM9.00043 7.37695C7.83043 7.37695 6.87793 8.32945 6.87793 9.49945C6.87793 10.6695 7.83043 11.622 9.00043 11.622C10.1704 11.622 11.1229 10.6695 11.1229 9.49945C11.1229 8.32945 10.1704 7.37695 9.00043 7.37695Z"
+                    fill="#757575"
+                  />
+                  <path
+                    d="M8.99957 16.2644C6.17957 16.2644 3.51707 14.6144 1.68707 11.7494C0.89207 10.5119 0.89207 8.49437 1.68707 7.24937C3.52457 4.38438 6.18707 2.73438 8.99957 2.73438C11.8121 2.73438 14.4746 4.38438 16.3046 7.24937C17.0996 8.48688 17.0996 10.5044 16.3046 11.7494C14.4746 14.6144 11.8121 16.2644 8.99957 16.2644ZM8.99957 3.85938C6.57707 3.85938 4.25957 5.31438 2.63957 7.85688C2.07707 8.73438 2.07707 10.2644 2.63957 11.1419C4.25957 13.6844 6.57707 15.1394 8.99957 15.1394C11.4221 15.1394 13.7396 13.6844 15.3596 11.1419C15.9221 10.2644 15.9221 8.73438 15.3596 7.85688C13.7396 5.31438 11.4221 3.85938 8.99957 3.85938Z"
+                    fill="#757575"
+                  />
+                </svg>
+
+                <p class="font-[MyFont] text-[12px] text-[#757575]">1,213</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-[16px] p-4 border border-[#D7D7D7]"
+          flex
+          justify-center
+        >
+          <img
+            src="./assets/camero-fVbYHEd6.jpg"
+            alt=""
+            class="w-full rounded-[16px]"
+          />
+          <p class="font-[MyFont] text-[16px] mt-2">
+            روش های مختلف برای اجاره خودرو
+          </p>
+          <p class="font-[MyFont] text-[12px] text-[#757575] mt-2">
+             امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+            وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی
+            شده است.
+          </p>
+          <div>
+            <div class="flex mt-2 gap-6 px-1">
+              <div class="flex gap-0.5 items-center">
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 17.5625C4.5525 17.5625 0.9375 13.9475 0.9375 9.5C0.9375 5.0525 4.5525 1.4375 9 1.4375C13.4475 1.4375 17.0625 5.0525 17.0625 9.5C17.0625 13.9475 13.4475 17.5625 9 17.5625ZM9 2.5625C5.175 2.5625 2.0625 5.675 2.0625 9.5C2.0625 13.325 5.175 16.4375 9 16.4375C12.825 16.4375 15.9375 13.325 15.9375 9.5C15.9375 5.675 12.825 2.5625 9 2.5625Z"
+                    fill="#757575"
+                  />
+                  <path
+                    d="M11.783 12.4478C11.6855 12.4478 11.588 12.4253 11.498 12.3653L9.17297 10.9778C8.59547 10.6328 8.16797 9.87531 8.16797 9.20781V6.13281C8.16797 5.82531 8.42297 5.57031 8.73047 5.57031C9.03797 5.57031 9.29297 5.82531 9.29297 6.13281V9.20781C9.29297 9.47781 9.51797 9.87531 9.75047 10.0103L12.0755 11.3978C12.3455 11.5553 12.428 11.9003 12.2705 12.1703C12.158 12.3503 11.9705 12.4478 11.783 12.4478Z"
+                    fill="#757575"
+                  />
+                </svg>
+
+                <p
+                  class="font-[MyFont] text-[12px] text-[#757575] leading-none"
+                >
+                  3دقیقه
+                </p>
+              </div>
+
+              <div class="flex gap-0.5 items-center">
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.00043 12.747C7.20793 12.747 5.75293 11.292 5.75293 9.49945C5.75293 7.70695 7.20793 6.25195 9.00043 6.25195C10.7929 6.25195 12.2479 7.70695 12.2479 9.49945C12.2479 11.292 10.7929 12.747 9.00043 12.747ZM9.00043 7.37695C7.83043 7.37695 6.87793 8.32945 6.87793 9.49945C6.87793 10.6695 7.83043 11.622 9.00043 11.622C10.1704 11.622 11.1229 10.6695 11.1229 9.49945C11.1229 8.32945 10.1704 7.37695 9.00043 7.37695Z"
+                    fill="#757575"
+                  />
+                  <path
+                    d="M8.99957 16.2644C6.17957 16.2644 3.51707 14.6144 1.68707 11.7494C0.89207 10.5119 0.89207 8.49437 1.68707 7.24937C3.52457 4.38438 6.18707 2.73438 8.99957 2.73438C11.8121 2.73438 14.4746 4.38438 16.3046 7.24937C17.0996 8.48688 17.0996 10.5044 16.3046 11.7494C14.4746 14.6144 11.8121 16.2644 8.99957 16.2644ZM8.99957 3.85938C6.57707 3.85938 4.25957 5.31438 2.63957 7.85688C2.07707 8.73438 2.07707 10.2644 2.63957 11.1419C4.25957 13.6844 6.57707 15.1394 8.99957 15.1394C11.4221 15.1394 13.7396 13.6844 15.3596 11.1419C15.9221 10.2644 15.9221 8.73438 15.3596 7.85688C13.7396 5.31438 11.4221 3.85938 8.99957 3.85938Z"
+                    fill="#757575"
+                  />
+                </svg>
+
+                <p class="font-[MyFont] text-[12px] text-[#757575]">1,213</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-[16px] p-4 border border-[#D7D7D7]"
+          flex
+          justify-center
+        >
+          <img
+            src="./assets/jeep-G9kOmdh9.jpg"
+            alt=""
+            class="w-full rounded-[16px]"
+          />
+          <p class="font-[MyFont] text-[16px] mt-2">
+            روش های مختلف برای اجاره خودرو
+          </p>
+          <p class="font-[MyFont] text-[12px] text-[#757575] mt-2">
+             امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+            وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولاتی
+            شده است.
+          </p>
+          <div>
+            <div class="flex mt-2 gap-6 px-1">
+              <div class="flex gap-0.5 items-center">
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 17.5625C4.5525 17.5625 0.9375 13.9475 0.9375 9.5C0.9375 5.0525 4.5525 1.4375 9 1.4375C13.4475 1.4375 17.0625 5.0525 17.0625 9.5C17.0625 13.9475 13.4475 17.5625 9 17.5625ZM9 2.5625C5.175 2.5625 2.0625 5.675 2.0625 9.5C2.0625 13.325 5.175 16.4375 9 16.4375C12.825 16.4375 15.9375 13.325 15.9375 9.5C15.9375 5.675 12.825 2.5625 9 2.5625Z"
+                    fill="#757575"
+                  />
+                  <path
+                    d="M11.783 12.4478C11.6855 12.4478 11.588 12.4253 11.498 12.3653L9.17297 10.9778C8.59547 10.6328 8.16797 9.87531 8.16797 9.20781V6.13281C8.16797 5.82531 8.42297 5.57031 8.73047 5.57031C9.03797 5.57031 9.29297 5.82531 9.29297 6.13281V9.20781C9.29297 9.47781 9.51797 9.87531 9.75047 10.0103L12.0755 11.3978C12.3455 11.5553 12.428 11.9003 12.2705 12.1703C12.158 12.3503 11.9705 12.4478 11.783 12.4478Z"
+                    fill="#757575"
+                  />
+                </svg>
+
+                <p
+                  class="font-[MyFont] text-[12px] text-[#757575] leading-none"
+                >
+                  3دقیقه
+                </p>
+              </div>
+
+              <div class="flex gap-0.5 items-center">
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.00043 12.747C7.20793 12.747 5.75293 11.292 5.75293 9.49945C5.75293 7.70695 7.20793 6.25195 9.00043 6.25195C10.7929 6.25195 12.2479 7.70695 12.2479 9.49945C12.2479 11.292 10.7929 12.747 9.00043 12.747ZM9.00043 7.37695C7.83043 7.37695 6.87793 8.32945 6.87793 9.49945C6.87793 10.6695 7.83043 11.622 9.00043 11.622C10.1704 11.622 11.1229 10.6695 11.1229 9.49945C11.1229 8.32945 10.1704 7.37695 9.00043 7.37695Z"
+                    fill="#757575"
+                  />
+                  <path
+                    d="M8.99957 16.2644C6.17957 16.2644 3.51707 14.6144 1.68707 11.7494C0.89207 10.5119 0.89207 8.49437 1.68707 7.24937C3.52457 4.38438 6.18707 2.73438 8.99957 2.73438C11.8121 2.73438 14.4746 4.38438 16.3046 7.24937C17.0996 8.48688 17.0996 10.5044 16.3046 11.7494C14.4746 14.6144 11.8121 16.2644 8.99957 16.2644ZM8.99957 3.85938C6.57707 3.85938 4.25957 5.31438 2.63957 7.85688C2.07707 8.73438 2.07707 10.2644 2.63957 11.1419C4.25957 13.6844 6.57707 15.1394 8.99957 15.1394C11.4221 15.1394 13.7396 13.6844 15.3596 11.1419C15.9221 10.2644 15.9221 8.73438 15.3596 7.85688C13.7396 5.31438 11.4221 3.85938 8.99957 3.85938Z"
+                    fill="#757575"
+                  />
+                </svg>
+
+                <p class="font-[MyFont] text-[12px] text-[#757575]">1,213</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of maghalat -->
+
+    <!-- footer -->
+    <footer
+      class="bg-[#1E1E1EE5] p-6 md:p-10 border border-[#868686] rounded-2xl w-[90%] md:w-[80%] mx-auto mt-10 mb-5"
+    >
+      <!-- بخش آیکون‌ها و اطلاعات تماس -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 border border-[#868686] rounded-2xl w-[90%] mx-auto my-10"
+      >
+        <!-- ارتباط ما -->
+        <div class="flex gap-4 items-center md:mr-[10%]">
+          <!-- آیکون تماس -->
+          <svg
+            width="49"
+            height="49"
+            viewBox="0 0 49 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.666016"
+              y="1"
+              width="47"
+              height="47"
+              rx="11.5"
+              stroke="white"
+            />
+            <path
+              d="M29.616 35.25C28.486 35.25 27.296 34.98 26.066 34.46C24.866 33.95 23.656 33.25 22.476 32.4C21.306 31.54 20.176 30.58 19.106 29.53C18.046 28.46 17.086 27.33 16.236 26.17C15.376 24.97 14.686 23.77 14.196 22.61C13.676 21.37 13.416 20.17 13.416 19.04C13.416 18.26 13.556 17.52 13.826 16.83C14.106 16.12 14.556 15.46 15.166 14.89C15.936 14.13 16.816 13.75 17.756 13.75C18.146 13.75 18.546 13.84 18.886 14C19.276 14.18 19.606 14.45 19.846 14.81L22.166 18.08C22.376 18.37 22.536 18.65 22.646 18.93C22.776 19.23 22.846 19.53 22.846 19.82C22.846 20.2 22.736 20.57 22.526 20.92C22.376 21.19 22.146 21.48 21.856 21.77L21.176 22.48C21.186 22.51 21.196 22.53 21.206 22.55C21.326 22.76 21.566 23.12 22.026 23.66C22.516 24.22 22.976 24.73 23.436 25.2C24.026 25.78 24.516 26.24 24.976 26.62C25.546 27.1 25.916 27.34 26.136 27.45L26.116 27.5L26.846 26.78C27.156 26.47 27.456 26.24 27.746 26.09C28.296 25.75 28.996 25.69 29.696 25.98C29.956 26.09 30.236 26.24 30.536 26.45L33.856 28.81C34.226 29.06 34.496 29.38 34.656 29.76C34.806 30.14 34.876 30.49 34.876 30.84C34.876 31.32 34.766 31.8 34.556 32.25C34.346 32.7 34.086 33.09 33.756 33.45C33.186 34.08 32.566 34.53 31.846 34.82C31.156 35.1 30.406 35.25 29.616 35.25ZM17.756 15.25C17.206 15.25 16.696 15.49 16.206 15.97C15.746 16.4 15.426 16.87 15.226 17.38C15.016 17.9 14.916 18.45 14.916 19.04C14.916 19.97 15.136 20.98 15.576 22.02C16.026 23.08 16.656 24.18 17.456 25.28C18.256 26.38 19.166 27.45 20.166 28.46C21.166 29.45 22.246 30.37 23.356 31.18C24.436 31.97 25.546 32.61 26.646 33.07C28.356 33.8 29.956 33.97 31.276 33.42C31.786 33.21 32.236 32.89 32.646 32.43C32.876 32.18 33.056 31.91 33.206 31.59C33.326 31.34 33.386 31.08 33.386 30.82C33.386 30.66 33.356 30.5 33.276 30.32C33.246 30.26 33.186 30.15 32.996 30.02L29.676 27.66C29.476 27.52 29.296 27.42 29.126 27.35C28.906 27.26 28.816 27.17 28.476 27.38C28.276 27.48 28.096 27.63 27.896 27.83L27.136 28.58C26.746 28.96 26.146 29.05 25.686 28.88L25.416 28.76C25.006 28.54 24.526 28.2 23.996 27.75C23.516 27.34 22.996 26.86 22.366 26.24C21.876 25.74 21.386 25.21 20.876 24.62C20.406 24.07 20.066 23.6 19.856 23.21L19.736 22.91C19.676 22.68 19.656 22.55 19.656 22.41C19.656 22.05 19.786 21.73 20.036 21.48L20.786 20.7C20.986 20.5 21.136 20.31 21.236 20.14C21.316 20.01 21.346 19.9 21.346 19.8C21.346 19.72 21.316 19.6 21.266 19.48C21.196 19.32 21.086 19.14 20.946 18.95L18.626 15.67C18.526 15.53 18.406 15.43 18.256 15.36C18.096 15.29 17.926 15.25 17.756 15.25ZM26.116 27.51L25.956 28.19L26.226 27.49C26.176 27.48 26.136 27.49 26.116 27.51Z"
+              fill="white"
+            />
+            <path
+              d="M30.666 22.25C30.256 22.25 29.916 21.91 29.916 21.5C29.916 21.14 29.556 20.39 28.956 19.75C28.366 19.12 27.716 18.75 27.166 18.75C26.756 18.75 26.416 18.41 26.416 18C26.416 17.59 26.756 17.25 27.166 17.25C28.136 17.25 29.156 17.77 30.046 18.72C30.876 19.61 31.416 20.7 31.416 21.5C31.416 21.91 31.076 22.25 30.666 22.25Z"
+              fill="white"
+            />
+            <path
+              d="M34.166 22.25C33.756 22.25 33.416 21.91 33.416 21.5C33.416 18.05 30.616 15.25 27.166 15.25C26.756 15.25 26.416 14.91 26.416 14.5C26.416 14.09 26.756 13.75 27.166 13.75C31.436 13.75 34.916 17.23 34.916 21.5C34.916 21.91 34.576 22.25 34.166 22.25Z"
+              fill="white"
+            />
+          </svg>
+
+          <!-- متن -->
+          <div class="flex flex-col gap-2 md:text-center">
+            <p class="font-[MyFont] text-white text-sm">ارتباط ما</p>
+            <p class="font-[MyFont] text-white text-sm">0912-21326545</p>
+          </div>
+        </div>
+
+        <!-- ایمیل -->
+        <div class="flex gap-4 items-center md:mr-[10%]">
+          <svg
+            width="49"
+            height="49"
+            viewBox="0 0 49 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="1" y="1" width="47" height="47" rx="11.5" stroke="white" />
+            <path
+              d="M29.5 33.75H19.5C15.85 33.75 13.75 31.65 13.75 28V21C13.75 17.35 15.85 15.25 19.5 15.25H29.5C33.15 15.25 35.25 17.35 35.25 21V28C35.25 31.65 33.15 33.75 29.5 33.75ZM19.5 16.75C16.64 16.75 15.25 18.14 15.25 21V28C15.25 30.86 16.64 32.25 19.5 32.25H29.5C32.36 32.25 33.75 30.86 33.75 28V21C33.75 18.14 32.36 16.75 29.5 16.75H19.5Z"
+              fill="white"
+            />
+            <path
+              d="M24.4998 25.37C23.6598 25.37 22.8098 25.11 22.1598 24.58L19.0298 22.08C18.7098 21.82 18.6498 21.35 18.9098 21.03C19.1698 20.71 19.6398 20.65 19.9598 20.91L23.0898 23.41C23.8498 24.02 25.1398 24.02 25.8998 23.41L29.0298 20.91C29.3498 20.65 29.8298 20.7 30.0798 21.03C30.3398 21.35 30.2898 21.83 29.9598 22.08L26.8298 24.58C26.1898 25.11 25.3398 25.37 24.4998 25.37Z"
+              fill="white"
+            />
+          </svg>
+
+          <div class="flex flex-col gap-2 md:text-center">
+            <p class="font-[MyFont] text-white text-sm">ایمیل</p>
+            <p class="font-[MyFont] text-white text-sm">autorent@info.com</p>
+          </div>
+        </div>
+
+        <!-- آدرس -->
+        <div class="flex gap-4 items-center md:mr-[10%]">
+          <svg
+            width="49"
+            height="49"
+            viewBox="0 0 49 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1.33301"
+              y="1"
+              width="47"
+              height="47"
+              rx="11.5"
+              stroke="white"
+            />
+            <path
+              d="M28.483 33.9102C28.053 33.9102 27.623 33.8202 27.273 33.6502L22.023 31.0202C21.723 30.8702 21.133 30.8802 20.843 31.0502L18.483 32.4002C17.463 32.9802 16.413 33.0602 15.623 32.5902C14.823 32.1302 14.373 31.1902 14.373 30.0102V20.2902C14.373 19.3802 14.973 18.3502 15.763 17.9002L20.093 15.4202C20.823 15.0002 21.933 14.9702 22.683 15.3502L27.933 17.9802C28.233 18.1302 28.813 18.1102 29.113 17.9502L31.463 16.6102C32.483 16.0302 33.533 15.9502 34.323 16.4202C35.123 16.8802 35.573 17.8202 35.573 19.0002V28.7302C35.573 29.6402 34.973 30.6702 34.183 31.1202L29.853 33.6002C29.473 33.8002 28.973 33.9102 28.483 33.9102ZM21.473 29.4202C21.903 29.4202 22.333 29.5102 22.683 29.6802L27.933 32.3102C28.233 32.4602 28.813 32.4402 29.113 32.2802L33.443 29.8002C33.763 29.6202 34.073 29.0802 34.073 28.7202V18.9902C34.073 18.3602 33.893 17.8902 33.563 17.7102C33.243 17.5302 32.743 17.6002 32.203 17.9102L29.853 19.2502C29.123 19.6702 28.013 19.7002 27.263 19.3202L22.013 16.6902C21.713 16.5402 21.133 16.5602 20.833 16.7202L16.503 19.2002C16.183 19.3802 15.873 19.9202 15.873 20.2902V30.0202C15.873 30.6502 16.053 31.1202 16.373 31.3002C16.693 31.4902 17.193 31.4102 17.743 31.1002L20.093 29.7602C20.483 29.5302 20.983 29.4202 21.473 29.4202Z"
+              fill="white"
+            />
+            <path
+              d="M21.3926 30.25C20.9826 30.25 20.6426 29.91 20.6426 29.5V16.5C20.6426 16.09 20.9826 15.75 21.3926 15.75C21.8026 15.75 22.1426 16.09 22.1426 16.5V29.5C22.1426 29.91 21.8026 30.25 21.3926 30.25Z"
+              fill="white"
+            />
+            <path
+              d="M28.5635 33.2491C28.1535 33.2491 27.8135 32.9091 27.8135 32.4991V19.1191C27.8135 18.7091 28.1535 18.3691 28.5635 18.3691C28.9735 18.3691 29.3135 18.7091 29.3135 19.1191V32.4991C29.3135 32.9091 28.9735 33.2491 28.5635 33.2491Z"
+              fill="white"
+            />
+          </svg>
+
+          <div class="flex flex-col gap-2 md:text-center">
+            <p class="font-[MyFont] text-white text-sm">آدرس</p>
+            <p class="font-[MyFont] text-white text-sm">تهران - خ شادمان</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- بخش پایین فوتر -->
+      <div class="w-[90%] mx-auto flex flex-col md:flex-row gap-6 mb-6">
+        <!-- لوگو و توضیحات -->
+        <div class="w-full md:w-[45%] flex flex-col gap-4 px-2">
+          <img src="./assets/logo2-CzYWG2Ui.png" alt="لوگو" class="w-[150px]" />
+          <p
+            class="font-[MyFont] text-[12px] md:text-[14px] text-white leading-6"
+          >
+            اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین ناوگان
+            خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در
+            سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+          </p>
+        </div>
+
+        <!-- دسترسی آسان -->
+        <div class="w-full md:w-[25%] flex flex-col px-4 mt-[10px]">
+          <p class="font-[MyFont] text-[14px] text-white mb-4">دسترسی آسان</p>
+          <div class="flex flex-col gap-2">
+            <a
+              class="font-[MyFont] text-[14px] text-white hover:text-[#FFB800] transition-colors"
+              href="#"
+              >سوالات متداول</a
+            >
+            <a
+              class="font-[MyFont] text-[14px] text-white hover:text-[#FFB800] transition-colors"
+              href="#"
+              >تماس با ما</a
+            >
+            <a
+              class="font-[MyFont] text-[14px] text-white hover:text-[#FFB800] transition-colors"
+              href="#"
+              >درباره ما</a
+            >
+          </div>
+        </div>
+
+        <!-- خبرنامه -->
+        <div
+          class="w-full md:w-[30%] flex flex-col items-center md:items-start"
+        >
+          <p class="text-white font-bold mb-2 text-center md:text-right">
+            خبرنامه
+          </p>
+          <div
+            class="border border-[#AEAEAE] rounded-[8px] w-[100%] flex items-center bg-white/10 backdrop-blur-sm"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              class="flex-grow p-2 bg-transparent text-white placeholder-white outline-none font-[MyFont] text-[14px] rounded-r-none rounded-l-[8px]"
+            />
+            <button
+              type="button"
+              class="bg-[#FFB800] text-black font-[MyFont] text-[14px] px-4 py-2 rounded-[8px] cursor-pointer hover:bg-[#e6a800] transition-colors"
+            >
+              ثبت
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="h-[80px] bg"></div>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const overlay = document.getElementById("overlay");
+
+      function toggleMenu() {
+        const isOpen = !mobileMenu.classList.contains("hidden");
+
+        if (isOpen) {
+          mobileMenu.classList.add("hidden");
+          overlay.classList.add("hidden");
+          document.body.style.overflow = "auto";
+        } else {
+          mobileMenu.classList.remove("hidden");
+          overlay.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      menuBtn.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
+          toggleMenu();
+        }
+      });
+    </script>
+    <script>
+      new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
