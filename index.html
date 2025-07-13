@@ -184,9 +184,15 @@
             <img src="./assets/arrow-left-DQpsydiD.svg" alt="arrow" />
             <p class="font-[MyFont]">محل تحویل خودرو</p>
           </div>
-          <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">
-            تهران - فرودگاه امام خمینی
-          </p>
+            <select
+              id="delivery-location"
+              class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full mt-1 p-1 rounded"
+            >
+              <option value="ika">تهران - فرودگاه امام خمینی</option>
+              <option value="tehran-city">تهران - مرکز شهر</option>
+              <option value="mashhad">مشهد - فرودگاه هاشمی‌نژاد</option>
+              <option value="shiraz">شیراز - ترمینال امیرکبیر</option>
+            </select>
         </div>
 
         <div
@@ -197,8 +203,11 @@
             <p class="font-[MyFont]">تاریخ تحویل</p>
           </div>
           <div class="flex items-center justify-between w-full">
-            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
-            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+              <input
+                type="date"
+                class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full p-1 rounded"
+                value="2024-04-29"
+              />            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
           </div>
         </div>
 
@@ -223,8 +232,11 @@
             <p class="font-[MyFont]">تاریخ بازگشت</p>
           </div>
           <div class="flex items-center justify-between w-full">
-            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫15</p>
-            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+              <input
+                type="date"
+                class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full p-1 rounded"
+                value="2024-04-29"
+              />            <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
           </div>
         </div>
 
@@ -279,36 +291,52 @@
           <div
             class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-full md:w-[30%]"
           >
-            <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">
-              تهران - فرودگاه امام خمینی
-            </p>
-            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.6494%207.3457L16.6885%207.37109C16.7099%207.39261%2016.7236%207.42326%2016.7236%207.45898C16.7236%207.4767%2016.7198%207.4931%2016.7139%207.50781L16.6885%207.54688L11.2549%2012.9805C10.9102%2013.3251%2010.4552%2013.501%2010%2013.501C9.60173%2013.5009%209.20399%2013.366%208.87988%2013.1016L8.74512%2012.9805L3.3125%207.54688C3.291%207.52537%203.27738%207.49478%203.27734%207.45898C3.27734%207.44091%203.28101%207.42413%203.28711%207.40918L3.3125%207.37109C3.33403%207.34957%203.36454%207.33594%203.40039%207.33594C3.41816%207.33595%203.43446%207.33977%203.44922%207.3457L3.48828%207.37109L8.92188%2012.8037C9.47984%2013.3617%2010.364%2013.3972%2010.9629%2012.9092L11.0791%2012.8037L16.5117%207.37109C16.5332%207.34957%2016.5647%207.33594%2016.6006%207.33594C16.6184%207.33598%2016.6347%207.33975%2016.6494%207.3457Z'%20fill='%23868686'%20stroke='%23868686'/%3e%3c/svg%3e" alt="dropdown" />
+            <select
+              class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full mt-1 p-1 rounded"
+            >
+              <option value="ika">تهران - فرودگاه امام خمینی</option>
+              <option value="tehran-city">تهران - مرکز شهر</option>
+              <option value="mashhad">مشهد - فرودگاه هاشمی‌نژاد</option>
+              <option value="shiraz">شیراز - ترمینال امیرکبیر</option>
+            </select>
           </div>
 
           <div class="flex flex-wrap w-full md:w-[70%]">
             <div
               class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
             >
-              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
-              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+              <input
+                type="date"
+                class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full p-1 rounded"
+                value="2024-04-29"
+              />              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
             </div>
             <div
               class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
             >
-              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
-              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+              <input
+                type="time"
+                class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full p-1"
+                value="14:00"
+              />              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
             </div>
             <div
               class="flex items-center justify-between px-3 py-2 border-b md:border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
             >
-              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
-              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+              <input
+                type="date"
+                class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full p-1 rounded"
+                value="2024-04-29"
+              />              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
             </div>
             <div
               class="flex items-center justify-between px-3 py-2 border-b-0 md:border-l border-[#D7D7D7] w-1/2 md:w-1/4"
             >
-              <p class="font-[MyFont] text-[12px] text-[#0C0C0C]">1403٫02٫10</p>
-              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
+              <input
+                type="time"
+                class="font-[MyFont] text-[12px] text-[#0C0C0C] w-full p-1"
+                value="14:00"
+              />              <img src="./assets/calender-CJj8bhMS.svg" alt="calendar" />
             </div>
           </div>
         </div>
